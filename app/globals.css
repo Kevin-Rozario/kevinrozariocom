@@ -13,7 +13,7 @@ html {
 
 :root {
   --primary-font: var(--font-schibsted-grotesk);
-
+  --cursive-font: var(--font-alex-brush);
   --background: oklch(1 0 0);
   --foreground: oklch(0.145 0 0);
   --card: oklch(1 0 0);
@@ -86,7 +86,8 @@ html {
   --font-sans: var(--primary-font), ui-sans-serif, system-ui, sans-serif;
   --font-display: var(--primary-font);
   --font-heading: var(--primary-font);
-
+  --font-cursive: var(--cursive-font), cursive;
+  --font-mono: var(--font-mono);
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-sidebar-ring: var(--sidebar-ring);
@@ -143,6 +144,6 @@ html {
   h4,
   h5,
   h6 {
-    @apply font-display tracking-tight font-semibold text-balance;
+    @apply font-display font-semibold tracking-tight text-balance;
   }
 }

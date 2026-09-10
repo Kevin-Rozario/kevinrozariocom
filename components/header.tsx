@@ -25,7 +25,7 @@ export default function Header({ activePage }: HeaderProps) {
     }`;
 
   return (
-    <div className="relative flex w-full shrink-0 flex-col items-start gap-4">
+    <header className="relative flex w-full shrink-0 flex-col items-start gap-4">
       {/* Profile Image */}
       <Link
         href="/"
@@ -44,7 +44,7 @@ export default function Header({ activePage }: HeaderProps) {
         className="flex h-6 w-full items-center gap-1 transition-opacity hover:opacity-70"
         aria-label="Kevin Rozario home"
       >
-        <h1 className="text-xl font-medium tracking-tight text-taupe-800 dark:text-taupe-100">
+        <h1 className="text-xl font-bold tracking-tight text-taupe-800 dark:text-taupe-100">
           Kevin Rozario
         </h1>
       </Link>
@@ -61,6 +61,6 @@ export default function Header({ activePage }: HeaderProps) {
         ))}
         <ThemeToggle />
       </nav>
-    </div>
+    </header>
   );
 }

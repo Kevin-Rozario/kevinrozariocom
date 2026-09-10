@@ -1,8 +1,14 @@
 import type { Metadata } from "next";
-import { Schibsted_Grotesk } from "next/font/google";
+import { Alex_Brush, Schibsted_Grotesk } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/providers/theme-provider";
 import { cn } from "@/lib/utils";
+
+const alexBrush = Alex_Brush({
+  subsets: ["latin"],
+  weight: "400",
+  variable: "--font-alex-brush",
+});
 
 const schibstedGrotesk = Schibsted_Grotesk({
   subsets: ["latin"],
@@ -23,7 +29,11 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={cn(schibstedGrotesk.variable, "h-full font-sans antialiased")}
+      className={cn(
+        schibstedGrotesk.variable,
+        alexBrush.variable,
+        "h-full font-sans antialiased",
+      )}
       suppressHydrationWarning
     >
       <body className="flex min-h-full flex-col">
