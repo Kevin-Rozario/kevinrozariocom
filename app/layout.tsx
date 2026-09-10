@@ -16,9 +16,31 @@ const schibstedGrotesk = Schibsted_Grotesk({
   variable: "--font-schibsted-grotesk",
 });
 
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://kevinrozario.com";
+
 export const metadata: Metadata = {
-  title: "Kevin Rozario - Developer",
-  description: "Portfolio website built with Next.js",
+  metadataBase: new URL(siteUrl),
+  title: {
+    default: "Kevin Rozario - Software Engineer, Builder",
+    template: "%s | Kevin Rozario",
+  },
+  description:
+    "Backend-leaning software engineer building with Node.js, TypeScript, and the MERN stack. Freelancer, builder, and part-time financial planner.",
+  openGraph: {
+    title: "Kevin Rozario",
+    description:
+      "Backend-leaning software engineer building with Node.js, TypeScript, and the MERN stack. Freelancer, builder, and part-time financial planner.",
+    url: siteUrl,
+    siteName: "Kevin Rozario",
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Kevin Rozario - Software Engineer, Builder.",
+    description:
+      "Backend-leaning software engineer building with Node.js, TypeScript, and the MERN stack. Freelancer, builder, and part-time financial planner.",
+  },
 };
 
 export default function RootLayout({

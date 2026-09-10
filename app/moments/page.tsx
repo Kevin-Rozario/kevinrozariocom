@@ -1,6 +1,13 @@
 import Header from "@/components/header";
 import Footer from "@/components/footer";
 import Divider from "@/components/divider";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Moments",
+  description:
+    "Rides, treks, and showing up for the people around - a look at Kevin's life outside the keyboard.",
+};
 
 export default function Moments() {
   return (

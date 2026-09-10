@@ -2,6 +2,13 @@ import Header from "@/components/header";
 import Footer from "@/components/footer";
 import Divider from "@/components/divider";
 import WorkSection from "@/components/work-section";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Kevin Rozario",
+  description:
+    "Kevin Rozario - software engineer building with Node.js, TypeScript, and the MERN stack. Freelancer, builder, and part-time financial planner based in Mumbai.",
+};
 
 export default function Home() {
   return (

@@ -33,7 +33,7 @@ export default function Header({ activePage }: HeaderProps) {
         aria-label="Go to home"
       >
         <Avatar size="lg">
-          <AvatarImage src="https://github.com/shadcn.png" loading="eager" />
+          <AvatarImage src="/kevin.png" loading="eager" />
           <AvatarFallback>KR</AvatarFallback>
         </Avatar>
       </Link>
