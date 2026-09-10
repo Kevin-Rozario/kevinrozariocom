@@ -36,14 +36,16 @@ export default function RootLayout({
       )}
       suppressHydrationWarning
     >
-      <body className="flex min-h-full flex-col">
+      <body className="flex min-h-screen w-full justify-center bg-taupe-100 py-10 dark:bg-taupe-900">
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
           enableSystem
           disableTransitionOnChange
         >
-          {children}
+          <div className="m-0 flex w-full max-w-xl flex-col items-center gap-6 px-4">
+            {children}
+          </div>
         </ThemeProvider>
       </body>
     </html>
